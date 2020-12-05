@@ -5,7 +5,7 @@ from scipy.stats import chi2_contingency
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv(r'C:\Users\Jujin\Desktop\stats-project-dataset\data\heart_failure_clinical_records_dataset.csv')
+df = pd.read_csv('data\heart_failure_clinical_records_dataset.csv')
 
 # print the mean, mode, median, variance, and outliers of ages
 # for visualizations, there can be one column for mean/median age at death
@@ -198,3 +198,34 @@ print('Mean of values, grouped by whether they have died: \n' + str(groupby_deat
 # plt.show()
 
 
+# P(a | b) = pd.crosstab(df.a, df.b, normalize='columns')
+# P(b | a) = pd.crosstab(df.a, df.b, normalize='index')
+cp_anaemia = pd.crosstab(df.anaemia, df.DEATH_EVENT, normalize='index')
+print(cp_anaemia)
+
+cp_diabetes = pd.crosstab(df.diabetes, df.DEATH_EVENT, normalize='index')
+print(cp_diabetes)
+
+cp_blood_pressure = pd.crosstab(df.high_blood_pressure, df.DEATH_EVENT, normalize='index')
+print(cp_blood_pressure)
+
+cp_sex = pd.crosstab(df.sex, df.DEATH_EVENT, normalize='index')
+print(cp_sex)
+
+cp_smoke = pd.crosstab(df.smoking, df.DEATH_EVENT, normalize='index')
+print(cp_smoke)
+
+cp_abnorm_ck = pd.crosstab(df.abnorm_ck, df.DEATH_EVENT, normalize='index')
+print(cp_abnorm_ck)
+
+cp_abnorm_eject_fract = pd.crosstab(df.abnorm_eject_fract, df.DEATH_EVENT, normalize='index')
+print(cp_abnorm_eject_fract)
+
+cp_abnorm_platelets = pd.crosstab(df.abnorm_platelets, df.DEATH_EVENT, normalize='index')
+print(cp_abnorm_platelets)
+
+cp_abnorm_creatinine = pd.crosstab(df.abnorm_creatinine, df.DEATH_EVENT, normalize='index')
+print(cp_abnorm_creatinine)
+
+cp_abnorm_sodium = pd.crosstab(df.abnorm_sodium, df.DEATH_EVENT, normalize='index')
+print(cp_abnorm_sodium)
