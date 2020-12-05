@@ -209,6 +209,9 @@ print(cp_diabetes)
 cp_blood_pressure = pd.crosstab(df.high_blood_pressure, df.DEATH_EVENT, normalize='index')
 print(cp_blood_pressure)
 
+cp_over_60 = pd.crosstab(df.over_60, df.DEATH_EVENT, normalize='index')
+print(cp_over_60)
+
 cp_sex = pd.crosstab(df.sex, df.DEATH_EVENT, normalize='index')
 print(cp_sex)
 
