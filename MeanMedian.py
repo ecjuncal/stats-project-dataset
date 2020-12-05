@@ -178,11 +178,11 @@ print('Mean of values, grouped by whether they have died: \n' + str(groupby_deat
 # plt.show()
 
 # Box plot
-# df.plot(kind='box', subplots=True, layout=(4, 4), sharex=False, sharey=False, figsize=(12, 12))
+# df[["age", "creatinine_phosphokinase", "ejection_fraction", "platelets", "serum_creatinine", "serum_sodium"]].plot(kind='box', subplots=True, layout=(3, 3), sharex=False, sharey=False, figsize=(15, 15))
 # plt.show()
 
 # densityPlot
-# df.plot(kind='density', subplots= True, layout=(4, 4), sharex=False, figsize=(12, 12))
+# df[["age", "creatinine_phosphokinase", "ejection_fraction", "platelets", "serum_creatinine", "serum_sodium"]].plot(kind='density', subplots= True, layout=(3, 3), sharex=False, figsize=(15, 15))
 # plt.show()
 
 # Correlation Heatmap
