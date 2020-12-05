@@ -35,52 +35,58 @@ std3 = df['creatinine_phosphokinase'].std()
 var3 = df['creatinine_phosphokinase'].var()
 outliers2 = df[df['creatinine_phosphokinase'] > mean3 + 3 * std3]
 
-mean4 = df['ejection_fraction'].mean()
-median4 = df['ejection_fraction'].median()
-std4 = df['ejection_fraction'].std()
-var4 = df['ejection_fraction'].var()
-outliers3 = df[df['ejection_fraction'] > mean4 + 3 * std4]
+mean4 = df['diabetes'].mean()
+median4 = df['diabetes'].median()
+std4 = df['diabetes'].std()
+var4 = df['diabetes'].var()
+outliers3 = df[df['diabetes'] > mean4 + 3 * std4]
 
-mean5 = df['high_blood_pressure'].mean()
-median5 = df['high_blood_pressure'].median()
-std5 = df['high_blood_pressure'].std()
-var5 = df['high_blood_pressure'].var()
-outliers4 = df[df['high_blood_pressure'] > mean5 + 3 * std5]
+mean5 = df['ejection_fraction'].mean()
+median5 = df['ejection_fraction'].median()
+std5 = df['ejection_fraction'].std()
+var5 = df['ejection_fraction'].var()
+outliers4 = df[df['ejection_fraction'] > mean5 + 3 * std5]
 
-mean6 = df['platelets'].mean()
-median6 = df['platelets'].median()
-std6 = df['platelets'].std()
-var6 = df['platelets'].var()
-outliers5 = df[df['platelets'] > mean6 + 3 * std6]
+mean6 = df['high_blood_pressure'].mean()
+median6 = df['high_blood_pressure'].median()
+std6 = df['high_blood_pressure'].std()
+var6 = df['high_blood_pressure'].var()
+outliers5 = df[df['high_blood_pressure'] > mean6 + 3 * std6]
 
-mean7 = df['serum_creatinine'].mean()
-median7 = df['serum_creatinine'].median()
-std7 = df['serum_creatinine'].std()
-var7 = df['serum_creatinine'].var()
-outliers6 = df[df['serum_creatinine'] > mean7 + 3 * std7]
+mean7 = df['platelets'].mean()
+median7 = df['platelets'].median()
+std7 = df['platelets'].std()
+var7 = df['platelets'].var()
+outliers6 = df[df['platelets'] > mean7 + 3 * std7]
 
-mean8 = df['serum_sodium'].mean()
-median8 = df['serum_sodium'].median()
-std8 = df['serum_sodium'].std()
-var8 = df['serum_sodium'].var()
-outliers7 = df[df['serum_sodium'] > mean8 + 3 * std8]
+mean8 = df['serum_creatinine'].mean()
+median8 = df['serum_creatinine'].median()
+std8 = df['serum_creatinine'].std()
+var8 = df['serum_creatinine'].var()
+outliers7 = df[df['serum_creatinine'] > mean8 + 3 * std8]
 
-mean9 = df['sex'].mean()
-median9 = df['sex'].median()
-std9 = df['sex'].std()
-var9 = df['sex'].var()
+mean9 = df['serum_sodium'].mean()
+median9 = df['serum_sodium'].median()
+std9 = df['serum_sodium'].std()
+var9 = df['serum_sodium'].var()
+outliers8 = df[df['serum_sodium'] > mean9 + 3 * std9]
 
-mean10 = df['smoking'].mean()
-median10 = df['smoking'].median()
-std10 = df['smoking'].std()
-var10 = df['smoking'].var()
-outliers8 = df[df['smoking'] > mean10 + 3 * std10]
+mean10 = df['sex'].mean()
+median10 = df['sex'].median()
+std10 = df['sex'].std()
+var10 = df['sex'].var()
 
-mean11 = df['DEATH_EVENT'].mean()
-median11 = df['DEATH_EVENT'].median()
-std11 = df['DEATH_EVENT'].std()
-var11 = df['DEATH_EVENT'].var()
-outliers9 = df[df['DEATH_EVENT'] > mean11 + 3 * std11]
+mean11 = df['smoking'].mean()
+median11 = df['smoking'].median()
+std11 = df['smoking'].std()
+var11 = df['smoking'].var()
+outliers9 = df[df['smoking'] > mean11 + 3 * std11]
+
+mean12 = df['DEATH_EVENT'].mean()
+median12 = df['DEATH_EVENT'].median()
+std12 = df['DEATH_EVENT'].std()
+var12 = df['DEATH_EVENT'].var()
+outliers10 = df[df['DEATH_EVENT'] > mean12 + 3 * std12]
 
 print(df.describe())
 
